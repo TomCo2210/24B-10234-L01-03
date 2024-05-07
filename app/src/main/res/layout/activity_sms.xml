@@ -2,43 +2,34 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".SmsActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sms_BTN_check_permissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Permissions" />
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/main_BTN_grant_permissions"
+        android:id="@+id/sms_BTN_read_sms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Grant Permissions" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/main_BTN_count_contacts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/main_BTN_grant_permissions"
-        android:text="Count Contacts"
-        android:layout_marginTop="10dp"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/main_BTN_read_contacts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/main_BTN_count_contacts"
-        android:text="Read Contacts"
-        android:layout_marginTop="10dp"/>
+        android:layout_below="@id/sms_BTN_check_permissions"
+        android:layout_marginTop="10dp"
+        android:text="Read SMS" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/main_LBL_info"
+        android:id="@+id/sms_LBL_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_below="@id/sms_BTN_read_sms"
         android:layout_marginTop="10dp"
+        android:text="Hello World!"
         android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_below="@id/main_BTN_read_contacts" />
+        android:textStyle="bold" />
 
 </RelativeLayout>
