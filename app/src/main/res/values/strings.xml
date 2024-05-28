@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">24B-10234-L01-03</string>
+    <string name="permission_rationale">Location permission is needed for core functionality. Please Enable it</string>
+    <string name="settings">Settings</string>
 </resources>
