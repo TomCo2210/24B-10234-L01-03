@@ -10,3 +10,7 @@
 - Check self permission
 - Material alert dialog builder
 - Should show request permission rationale
+
+## L03-L04
+- Location Permissions - Fine and Coarse
+- Background location
